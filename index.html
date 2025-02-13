@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agricultural Advisory System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#crop-recommendation">Crop Recommendation</a></li>
+                <li><a href="#weather">Weather Updates</a></li>
+                <li><a href="#forum">Farmer Forum</a></li>
+                <li><a href="#market-prices">Market Prices</a></li>
+                <li><a href="#expert-advice">Expert Advice</a></li>
+                <li><a href="#success-stories">Success Stories</a></li>
+                <li><a href="#sustainable-practices">Sustainable Practices</a></li>
+                <li><button id="dark-mode-toggle">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Smart Agricultural Advisory System</h1>
+            <p>Get real-time advice on crop selection, weather updates, and best farming practices.</p>
+        </section>
+
+        <section id="crop-recommendation">
+            <h2>Crop Recommendation</h2>
+            <form id="crop-form">
+                <label for="soil-type">Soil Type:</label>
+                <input type="text" id="soil-type" required>
+
+                <label for="climate">Climate:</label>
+                <input type="text" id="climate" required>
+
+                <button type="submit">Get Recommendation</button>
+            </form>
+            <div id="crop-result"></div>
+        </section>
+
+        <section id="weather">
+            <h2>Weather Updates</h2>
+            <form id="weather-form">
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+
+                <button type="submit">Get Weather</button>
+            </form>
+            <div id="weather-result"></div>
+        </section>
+
+        <section id="forum">
+            <h2>Farmer Forum</h2>
+            <form id="question-form">
+                <label for="question">Ask a Question:</label>
+                <textarea id="question" required></textarea>
+
+                <button type="submit">Post Question</button>
+            </form>
+            <div id="forum-posts"></div>
+        </section>
+
+        <section id="market-prices">
+            <h2>Market Prices</h2>
+            <p>Check the latest market prices of crops.</p>
+            <button id="fetch-prices">Get Prices</button>
+            <div id="price-list"></div>
+        </section>
+
+        <section id="expert-advice">
+            <h2>Expert Advice</h2>
+            <p>Chat with our AI assistant for quick farming tips.</p>
+            <form id="advice-form">
+                <input type="text" id="advice-query" placeholder="Ask a question..." required>
+                <button type="submit">Ask</button>
+            </form>
+            <div id="advice-response"></div>
+        </section>
+
+        <section id="success-stories">
+            <h2>Farmer Success Stories</h2>
+            <p>Read inspiring stories from fellow farmers.</p>
+            <div id="stories-list"></div>
+            <form id="story-form">
+                <label for="story">Share Your Story:</label>
+                <textarea id="story" required></textarea>
+                <button type="submit">Post Story</button>
+            </form>
+        </section>
+
+        <section id="sustainable-practices">
+            <h2>Sustainable Farming Practices</h2>
+            <ul id="practices-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Smart Agricultural Advisory System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
